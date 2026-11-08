@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Diwali, My Laxmi ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #f59e0b;
+      --gold-light: #fbbf24;
+      --rose: #fb7185;
+      --bg: #09090b;
+      --card-bg: rgba(24, 24, 27, 0.7);
+      --card-border: rgba(245, 158, 11, 0.2);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: #f4f4f5;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.7;
+      position: relative;
+    }
+
+    /* Ambient background glows */
+    .glow-bg {
+      position: fixed;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, rgba(0,0,0,0) 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Hero section */
+    .hero {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      color: var(--gold-light);
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .diya-icon {
+      font-size: 3.5rem;
+      margin-bottom: 12px;
+      animation: flicker 2s infinite alternate ease-in-out;
+      display: inline-block;
+      filter: drop-shadow(0 0 25px rgba(245, 158, 11, 0.6));
+    }
+
+    @keyframes flicker {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 25px rgba(245, 158, 11, 0.6)); }
+      50% { transform: scale(1.05); filter: drop-shadow(0 0 38px rgba(251, 191, 36, 0.9)); }
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+      line-height: 1.2;
+      background: linear-gradient(135deg, #fff 40%, var(--gold-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .sub-quote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: #a1a1aa;
+      font-size: 1.15rem;
+      margin-top: 14px;
+    }
+
+    /* Glass Cards */
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 32px;
+      margin-bottom: 28px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--gold-light);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    p {
+      color: #d4d4d8;
+      font-size: 1.05rem;
+      margin-bottom: 14px;
+cat << 'EOF' > index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Diwali, My Laxmi ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #f59e0b;
+      --gold-light: #fbbf24;
+      --rose: #fb7185;
+      --bg: #09090b;
+      --card-bg: rgba(24, 24, 27, 0.7);
+      --card-border: rgba(245, 158, 11, 0.2);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: #f4f4f5;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+      line-height: 1.7;
+      position: relative;
+    }
+
+    /* Ambient background glows */
+    .glow-bg {
+      position: fixed;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.15) 0%, rgba(0,0,0,0) 70%);
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Hero section */
+    .hero {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      color: var(--gold-light);
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .diya-icon {
+      font-size: 3.5rem;
+      margin-bottom: 12px;
+      animation: flicker 2s infinite alternate ease-in-out;
+      display: inline-block;
+      filter: drop-shadow(0 0 25px rgba(245, 158, 11, 0.6));
+    }
+
+    @keyframes flicker {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 25px rgba(245, 158, 11, 0.6)); }
+      50% { transform: scale(1.05); filter: drop-shadow(0 0 38px rgba(251, 191, 36, 0.9)); }
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 12px;
+      line-height: 1.2;
+      background: linear-gradient(135deg, #fff 40%, var(--gold-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .sub-quote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: #a1a1aa;
+      font-size: 1.15rem;
+      margin-top: 14px;
+    }
+
+    /* Glass Cards */
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 32px;
+      margin-bottom: 28px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--gold-light);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    p {
+      color: #d4d4d8;
+      font-size: 1.05rem;
+      margin-bottom: 14px;
+    }
+
+    /* Conflict Box */
+    .git-box {
+      background: #121214;
+      border: 1px dashed rgba(245, 158, 11, 0.4);
+      border-radius: 12px;
+      padding: 18px;
+      font-family: monospace;
+      font-size: 0.9rem;
+      margin: 18px 0;
+      color: #94a3b8;
+    }
+
+    .conflict-fear { color: #f87171; }
+    .conflict-res { color: #4ade80; font-weight: bold; }
+
+    /* Bullets & Promises */
+    .promise-list {
+      list-style: none;
+      margin: 16px 0;
+    }
+
+    .promise-list li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 12px;
+      color: #e4e4e7;
+    }
+
+    .promise-list li::before {
+      content: '✦';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+    }
+
+    /* Roadmap */
+    .roadmap-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      color: #e4e4e7;
+    }
+
+    .check {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: rgba(74, 222, 128, 0.15);
+      border: 1px solid #4ade80;
+      color: #4ade80;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: bold;
+    }
+
+    .pending {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+    }
+
+    .locked {
+      font-weight: 700;
+      color: var(--gold-light);
+    }
+
+    /* Interactive Button */
+    .button-box {
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    .glow-btn {
+      background: linear-gradient(135deg, #d97706, #f59e0b);
+      color: #09090b;
+      font-weight: 700;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 9999px;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+      transition: all 0.25s ease;
+    }
+
+    .glow-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(245, 158, 11, 0.7);
+    }
+
+    .hidden-msg {
+      display: none;
+      margin-top: 20px;
+      padding: 18px;
+      background: rgba(245, 158, 11, 0.08);
+      border-radius: 14px;
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      color: #fef08a;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #71717a;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glow-bg"></div>
+
+  <div class="container">
+    <header class="hero">
+      <div class="badge-pill">Branch: Together • Status: Eternal</div>
+      <div class="diya-icon">🪔</div>
+      <h1>Happy Diwali, My Laxmi</h1>
+      <p class="sub-quote">"Just as a single diya pierces through the heaviest darkness, having you by my side makes every uncertainty vanish."</p>
+    </header>
+
+    <!-- Card 1 -->
+    <div class="card">
+      <h2>✨ To Akshada, The Light of My World</h2>
+      <p>Diwali is about welcoming prosperity, peace, and light into one’s home. This year, I didn't need to look for any festival rituals to understand that—because you have been all three for me.</p>
+      <p>You are my light, my calm, and my true Laxmi.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <h2>🌿 Resolving The Merge Conflict</h2>
+      <div class="git-box">
+        <span class="conflict-fear">&lt;&lt;&lt;&lt;&lt;&lt;&lt; CURRENT_FEAR (Cultural gaps, family talks, traditions)</span><br>
+        Parents' hesitation, unsaid questions, miles of distance.<br>
+        =======<br>
+        <span class="conflict-res">OUR RESOLUTION (Unshakable alignment)</span><br>
+        Two souls choosing each other against every single odd.<br>
+        &gt;&gt;&gt;&gt;&gt;&gt;&gt; DESTINY (Our Marriage)
+      </div>
+      <p>We know what lies ahead of us. We know there are conversations with our parents that feel daunting. We know there are traditions and backgrounds that might make people pause.</p>
+      
+      <ul class="promise-list">
+        <li><strong>Differences exist to be understood, not feared.</strong></li>
+        <li><strong>Whatever conversations we face, we face them as one unit.</strong></li>
+        <li><strong>I am with you in this, no matter what happens, no matter what tone the room takes.</strong></li>
+      </ul>
+      <p style="color: var(--gold-light); font-weight: 600;">If you are standing with me, we can move mountains. Failure is not on our roadmap.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <h2>💍 The Roadmap to Our Wedding</h2>
+      <div class="roadmap-item"><span class="check">✓</span> <span>Finding each other in this vast world</span></div>
+      <div class="roadmap-item"><span class="check">✓</span> <span>Knowing in our bones that this is real</span></div>
+      <div class="roadmap-item"><span class="check">✓</span> <span>Lighting up each other's darkest days</span></div>
+      <div class="roadmap-item"><span class="pending">⏳</span> <span>Facing our families hand-in-hand <em>(in progress)</em></span></div>
+      <div class="roadmap-item"><span class="pending">✦</span> <span>Winning their hearts & their blessings <em>(upcoming)</em></span></div>
+      <div class="roadmap-item"><span class="check" style="border-color: var(--gold); color: var(--gold);">💍</span> <span class="locked">Our Wedding Day (Locked & Guaranteed)</span></div>
+      
+      <div class="button-box">
+        <button class="glow-btn" onclick="document.getElementById('secret').style.display='block'">Tap to Unlock My Promise</button>
+        <div id="secret" class="hidden-msg">
+          "No matter the distance, the cultural traditions, or the doubts—I choose you today, tomorrow, and every day until we stand at the mandap together. You are my home, Akshada."
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>🪔 <em>May this Diwali be the prelude to all the Diwalis we celebrate in our own home.</em> 🪔</p>
+      <p style="color: #a1a1aa; margin-top: 6px;"><strong>Always by your side, JD</strong></p>
+    </footer>
+  </div>
+
+</body>
+</html>
