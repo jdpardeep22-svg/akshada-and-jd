@@ -31,3 +31,14 @@ We know what lies ahead of us. We know there are conversations with our parents 
 - I am with you in this, no matter what happens, no matter what tone the room takes, no matter how long the conversation runs.
 
 > If you are standing with me, we can move mountains. Failure is not on the roadmap.
+
+---
+
+<div align="center">
+
+### 🪔 *May this Diwali be the prelude to all the Diwalis we celebrate in our own home.* 🪔
+
+**Always by your side,**  
+**JD**
+
+</div>
